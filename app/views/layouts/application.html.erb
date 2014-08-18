@@ -9,10 +9,18 @@
 <body>
 
 <b>Robby is teh c00l</b>
+<hr/>
 
 <%= yield %>
 
+<hr/>
 <i>Dont look here</i>
+<hr/>
+
+<% if @user_name != nil %>
+  Hello <%= @user_name.capitalize %>
+<% end %>
+
 
 </body>
 </html>

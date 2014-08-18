@@ -16,4 +16,10 @@ class WelcomeController < ApplicationController
   	#   and make available to the view
   	@first_visit = session['first_visit']
   end
+
+  def set_name
+    @user_name = params['user_name']
+    session['user_name'] = @user_name
+  end
+
 end
