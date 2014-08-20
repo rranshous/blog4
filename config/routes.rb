@@ -2,6 +2,9 @@ Rails.application.routes.draw do
 
   
 
+  get 'games/memory'
+  post 'games/memory' => 'games#memory'
+
   root 'welcome#index'
 
   get 'aboutme/index'
