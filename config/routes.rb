@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   
+  get 'portfolio' => 'aboutme#portfolio'
 
   get 'games/memory'
   post 'games/memory' => 'games#memory'
