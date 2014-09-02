@@ -1,5 +1,21 @@
 WELCOME TO PORTFOLIO
 
+<form method="GET">
+  <input type="submit" value="rails" name="category"/>
+</form>
+
+<form method="GET">
+	<input type="text" name="category"/>
+	<input type="submit"/>
+</form>
+
+<form method="GET">
+	<select name="category">
+		<option value="rails">Rails</option>
+		<option value="ruby">Ruby</option>
+     </select>
+	<input type="submit"/>
+</form>
 
 <% @projects.each do |project| %>
 
@@ -7,6 +23,8 @@ WELCOME TO PORTFOLIO
      name: <%= project.name %>
      <br/>
      description: <%= project.description %>
+     <br/>
+     category: <%= project.category %>
    </p>
 
 <% end %>

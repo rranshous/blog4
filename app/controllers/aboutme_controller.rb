@@ -10,6 +10,7 @@ class AboutmeController < ApplicationController
   end
 
   def portfolio
-    @projects = Project.all
+    chosen_category = params['category']
+    @projects = Project.where(category: chosen_category).all
   end
 end
